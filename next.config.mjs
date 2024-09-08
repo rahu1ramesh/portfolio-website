@@ -1,7 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: "export",
-    reactStrictMode: true,
+  reactStrictMode: true,
+  swcMinify: true,
+  distDir: "./build",
+  output: "standalone",
+  webpack: (config) => {
+    config.experiments = config.experiments || {};
+    config.experiments.topLevelAwait = true;
+    return config;
+  },
+  images: {
+    unoptimized: true,
+  },
 };
-
-module.exports = nextConfig;
+export default nextConfig;
