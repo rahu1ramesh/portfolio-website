@@ -30,7 +30,7 @@ jobs:
                   static_site_generator: next
 
             - name: Build with Next.js 🏗️
-              run: npx next build
+              run: npm run build && touch ./out/.nojekyll
 
     deploy:
         environment:
@@ -45,4 +45,4 @@ jobs:
               uses: JamesIves/github-pages-deploy-action@v4.6.0
               with:
                   branch: public
-                  folder: output
+                  folder: out
