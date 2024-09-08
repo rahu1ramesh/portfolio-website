@@ -1,9 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
-  distDir: "./build",
-  output: "standalone",
+  output: "export",
+  assetPrefix: "./",
   webpack: (config) => {
     config.experiments = config.experiments || {};
     config.experiments.topLevelAwait = true;
