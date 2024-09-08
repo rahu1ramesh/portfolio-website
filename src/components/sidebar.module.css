@@ -75,7 +75,6 @@
     z-index: 1;
 }
 .sidebarItemInfo a,
-.sidebarItemInfo time,
 .sidebarItemInfo address {
     color: var(--white-2);
     font-size: var(--fs-6);

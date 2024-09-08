@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import {CalendarMonth, LocationOn, MailOutline, PhoneAndroid, SvgIconComponent} from "@mui/icons-material";
+import {CalendarMonth, LocationOn, MailOutline, PhoneAndroid, SvgIconComponent, Work} from "@mui/icons-material";
 import styles from "./sidebar.module.css";
 
 interface SidebarProps {
@@ -37,11 +37,7 @@ const Sidebar: React.FC = () => {
                             title="Phone"
                             content={<a href="tel:+918086237540">+91 8086-2375-40</a>}
                         />
-                        <SidebarItem
-                            icon={CalendarMonth}
-                            title="Birthday"
-                            content={<time dateTime="2000-06-14">June 14, 2000</time>}
-                        />
+                        <SidebarItem icon={Work} title="Work" content={<address>Thoughtworks, Coimbatore</address>} />
                         <SidebarItem
                             icon={LocationOn}
                             title="Location"
