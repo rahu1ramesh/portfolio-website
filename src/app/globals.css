@@ -123,18 +123,12 @@ textarea {
     outline-color: var(--orange-yellow-crayola);
 }
 
-html,
-body {
+html {
     font-family: var(--ff-poppins);
-    max-width: 100vw;
-    overflow-x: hidden;
 }
 
 body {
-    color: var(--foreground);
     background: var(--smoky-black);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 
 main {
