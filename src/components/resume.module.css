@@ -1,0 +1,25 @@
+.resume {
+    margin: 0;
+    padding: 0 1.5rem;
+}
+
+.resumeTitle {
+    position: relative;
+    margin: 1rem 0rem;
+    color: var(--light-gray);
+    font-size: var(--fs-1);
+    font-weight: var(--fw-600);
+    line-height: 1.6;
+    padding-bottom: 0.5rem;
+}
+
+.resumeTitle::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 3rem;
+    height: 5px;
+    background: var(--text-gradient-yellow);
+    border-radius: 3px;
+}
