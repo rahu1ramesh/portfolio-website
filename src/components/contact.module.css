@@ -1,0 +1,76 @@
+.contact {
+    margin: 0;
+    padding: 0 1.5rem;
+}
+
+.contactTitle {
+    position: relative;
+    margin: 1rem 0rem;
+    color: var(--light-gray);
+    font-size: var(--fs-1);
+    font-weight: var(--fw-600);
+    line-height: 1.6;
+    padding-bottom: 0.5rem;
+}
+
+.contactTitle::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 3rem;
+    height: 5px;
+    background: var(--text-gradient-yellow);
+    border-radius: 3px;
+}
+
+.mapContent {
+    height: 16rem;
+    width: 53rem;
+    border-radius: 1.125rem;
+    border: 0.063rem solid var(--jet);
+    filter: invert(95%) hue-rotate(180deg);
+}
+
+.contactMessage {
+    min-height: 3.25rem;
+    height: 6.25rem;
+    max-height: 6.25rem;
+    margin-bottom: 0.75rem;
+    resize: vertical;
+    padding: 0.625rem;
+    color: var(--white-2);
+    font-size: var(--fs-6);
+    font-weight: var(--fw-400);
+    border: 0.063rem solid var(--jet);
+    border-radius: 0.875rem;
+    outline: none;
+    box-shadow: var(--shadow-2);
+    transition: var(--transition-1);
+}
+
+.contactBtn {
+    position: relative;
+    width: 100%;
+    background: var(--border-gradient-onyx);
+    color: var(--orange-yellow-crayola);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 20px;
+    border-radius: 0.5rem;
+    font-size: var(--fs-6);
+    text-transform: capitalize;
+    box-shadow: var(--shadow-3);
+    z-index: 1;
+    transition: var(--transition-1);
+    padding: 0.75rem 1.5rem;
+    width: max-content;
+    margin-left: auto;
+}
+
+.contactBtn:hover {
+    background: var(--orange-yellow-crayola);
+    color: var(--eerie-black-2);
+}
