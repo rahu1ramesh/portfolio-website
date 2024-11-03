@@ -5,7 +5,7 @@ const Contact: React.FC = () => {
     return (
         <div className={styles.contact}>
             <header>
-                <h2 className={styles.contactTitle}>I'm Here</h2>
+                <h2 className={styles.contactTitle}>I&apos;m Here</h2>
             </header>
             <div>
                 <iframe

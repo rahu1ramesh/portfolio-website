@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./about.module.css";
 import AboutTile from "./aboutTile";
-import {AutoStories, Language, Piano} from "@mui/icons-material";
+import {AutoStories, Piano} from "@mui/icons-material";
 
 const About: React.FC = () => {
     return (
