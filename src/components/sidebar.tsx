@@ -14,7 +14,13 @@ const Sidebar: React.FC = () => {
         <aside className={styles.sidebar}>
             <div className={styles.sidebarInfo}>
                 <figure className={styles.avatarBox}>
-                    <Image src="/images/profile.png" priority={true} alt="Rahul Ramesh" width={150} height={150} />
+                    <Image
+                        src="https://rahu1ramesh.github.io/portfolio-website/images/profile.png"
+                        priority={true}
+                        alt="Rahul Ramesh"
+                        width={150}
+                        height={150}
+                    />
                 </figure>
                 <div className={styles.infoContent}>
                     <h1 className={styles.name} title="Rahul Ramesh">
