@@ -9,6 +9,7 @@ permissions:
     contents: read
     pages: write
     id-token: write
+    packages: write
 
 concurrency:
     group: "pages"
@@ -52,9 +53,6 @@ jobs:
         needs: build
 
         steps:
-            - name: Download Artifact 📦
-              uses: actions/download-pages-artifact@v3
-
             - name: Publish to GitHub Pages 🚀
               id: deployment
               uses: actions/deploy-pages@v4
