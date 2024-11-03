@@ -1,5 +1,5 @@
 import React from "react";
-import {LinkedIn, GitHub, Instagram} from "@mui/icons-material";
+import {LinkedIn, GitHub, Instagram, X} from "@mui/icons-material";
 import styles from "./footer.module.css";
 
 const Footer: React.FC = () => {
@@ -13,6 +13,11 @@ const Footer: React.FC = () => {
             href: "https://github.com/rahu1ramesh",
             label: "rahu1ramesh",
             Icon: GitHub,
+        },
+        {
+            href: "https://x.com/rahu1ramesh",
+            label: "rahu1ramesh",
+            Icon: X,
         },
         {
             href: "https://www.instagram.com/rahu1.ramesh/",
