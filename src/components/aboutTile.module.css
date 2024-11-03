@@ -6,7 +6,7 @@
     padding: 1.875rem;
     position: relative;
     background: var(--eerie-black-2);
-    border: 1px solid var(--jet);
+    border: 0.063 solid var(--jet);
     padding: 1.25rem;
     border-radius: 0.875rem;
     box-shadow: var(--shadow-2);
@@ -35,10 +35,10 @@
 
 .aboutTileIcon {
     margin: auto;
-    width: 48px;
-    height: 48px;
-    border-radius: 12px;
-    font-size: 18px;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+    font-size: 1.125rem;
     position: relative;
     display: flex;
     justify-content: center;

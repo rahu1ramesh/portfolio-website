@@ -3,7 +3,7 @@
     unicode-bidi: isolate;
     background: hsla(240, 1%, 17%, 0.75);
     backdrop-filter: blur(10px);
-    border: 1px solid var(--jet);
+    border: 0.063rem solid var(--jet);
     margin-top: 0;
     border-top-left-radius: 0px;
     border-top-right-radius: 20px;

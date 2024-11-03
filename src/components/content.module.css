@@ -2,13 +2,13 @@
     position: sticky;
     grid-row-start: 3;
     display: flex;
-    gap: 24px;
+    gap: 1.5rem;
 }
 
 .footer a {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 0.5rem;
     color: var(--white-1);
 }
 

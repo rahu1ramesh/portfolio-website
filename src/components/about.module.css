@@ -20,13 +20,13 @@
     bottom: 0;
     left: 0;
     width: 3rem;
-    height: 5px;
+    height: 0.313rem;
     background: var(--text-gradient-yellow);
-    border-radius: 3px;
+    border-radius: 0.188rem;
 }
 
 .aboutContent {
-    margin-bottom: 15px;
+    margin-bottom: 0.938rem;
     color: var(--light-gray);
     font-size: var(--fs-3);
     font-weight: var(--fw-400);
