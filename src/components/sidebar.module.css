@@ -1,17 +1,12 @@
 .sidebar {
     position: sticky;
-    top: 60px;
-    max-height: max-content;
-    height: 100%;
-    margin-bottom: 0;
-    padding-top: 60px;
-    z-index: 1;
     background: var(--eerie-black-2);
     border: 1px solid var(--jet);
     border-radius: 20px;
     transition: var(--transition-1);
     margin-inline: auto;
     padding: 30px;
+    padding-top: 60px;
 }
 
 .separator {
