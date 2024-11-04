@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./aboutTile.module.css";
+import styles from "../styles/aboutTile.module.css";
 import {AboutTileProps} from "../types/about";
 
 const AboutTile: React.FC<AboutTileProps> = ({Icon, title, content}) => {

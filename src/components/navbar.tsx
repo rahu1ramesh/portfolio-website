@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./navbar.module.css";
+import styles from "../styles/navbar.module.css";
 import {ComponentName, TABS} from "./constants";
 
 interface NavbarProps {

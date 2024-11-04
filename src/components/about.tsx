@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./about.module.css";
+import styles from "../styles/about.module.css";
 import AboutTile from "./aboutTile";
 import {AutoStories, Piano} from "@mui/icons-material";
 

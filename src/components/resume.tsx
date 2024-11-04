@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./resume.module.css";
+import styles from "../styles/resume.module.css";
 import ResumeTile from "./resumeTile";
 import {workExperience, educationExperience} from "../constants/resume";
 

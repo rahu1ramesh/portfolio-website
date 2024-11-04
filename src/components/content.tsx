@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./content.module.css";
+import styles from "../styles/content.module.css";
 
 type ContentProps = {
     displayedComponent: JSX.Element;

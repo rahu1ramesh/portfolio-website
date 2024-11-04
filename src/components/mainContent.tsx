@@ -1,6 +1,6 @@
 "use client";
 import React, {useState} from "react";
-import styles from "./mainContent.module.css";
+import styles from "../styles/mainContent.module.css";
 import Navbar from "./navbar";
 import Content from "./content";
 import {ComponentName, COMPONENTS} from "./constants";

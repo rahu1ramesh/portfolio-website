@@ -1,6 +1,6 @@
 import React from "react";
 import {LinkedIn, GitHub, Instagram, X} from "@mui/icons-material";
-import styles from "./footer.module.css";
+import styles from "../styles/footer.module.css";
 
 const Footer: React.FC = () => {
     const links = [

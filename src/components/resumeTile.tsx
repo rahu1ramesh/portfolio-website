@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./resumeTile.module.css";
+import styles from "../styles/resumeTile.module.css";
 import {ResumeTileProps, ResumeTitleProps, ResumeItemProps} from "../types/resume";
 
 const ResumeTile: React.FC<ResumeTileProps> = ({icon, title, items}) => {

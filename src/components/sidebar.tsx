@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import {LocationOn, MailOutline, PhoneAndroid, SvgIconComponent, Work} from "@mui/icons-material";
-import styles from "./sidebar.module.css";
+import styles from "../styles/sidebar.module.css";
 
 interface SidebarProps {
     icon: SvgIconComponent;
