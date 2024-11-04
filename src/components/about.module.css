@@ -7,7 +7,7 @@
 .aboutTitle {
     position: relative;
     margin: 1.25rem 0rem;
-    color: var(--light-gray);
+    color: var(--white-2);
     font-size: var(--fs-1);
     font-weight: var(--fw-600);
     line-height: 1.6;

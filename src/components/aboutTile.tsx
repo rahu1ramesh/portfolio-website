@@ -1,18 +1,12 @@
 import React from "react";
 import styles from "./aboutTile.module.css";
-import {SvgIconComponent} from "@mui/icons-material";
-
-interface AboutTileProps {
-    Icon: SvgIconComponent;
-    title: string;
-    content: string;
-}
+import {AboutTileProps} from "../types/about";
 
 const AboutTile: React.FC<AboutTileProps> = ({Icon, title, content}) => {
     return (
         <div className={styles.aboutTile}>
             <div>
-                <Icon className={styles.aboutTileIcon} />
+                <Icon className={styles.aboutTileIcon} fontSize="large" />
             </div>
             <div>
                 <h4 className={styles.aboutTileTitle}>{title}</h4>

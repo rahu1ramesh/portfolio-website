@@ -1,0 +1,104 @@
+.resumeTile {
+    min-width: 54.5rem;
+}
+
+.iconBox {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+    font-size: 1.125rem;
+    position: relative;
+    background: var(--border-gradient-onyx);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--orange-yellow-crayola);
+    box-shadow: var(--shadow-1);
+    z-index: 1;
+}
+
+.iconBox:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    top: 3rem;
+    left: 1.3rem;
+    width: 1px;
+    height: calc(50%);
+    background: var(--timeline-line-color, #333);
+}
+
+.resumeTileTitle {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 1.25rem 0rem;
+}
+
+.title {
+    font-size: var(--fs-2);
+    color: var(--title-color, #ffffff);
+    font-weight: bold;
+}
+
+.timeline {
+    list-style: none;
+    padding-left: 1rem;
+    margin: 0;
+    position: relative;
+}
+
+.timelineItem {
+    position: relative;
+    padding-left: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.timelineMarker {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.1rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    background: var(--text-gradient-yellow);
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px var(--jet);
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.timelineItem:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    top: 1rem;
+    left: 0.3rem;
+    width: 1px;
+    height: calc(100% + 1rem);
+    background: var(--timeline-line-color, #333);
+}
+
+.timelineContent {
+    padding-left: 1rem;
+}
+
+.itemTitle {
+    font-size: var(--fs-5);
+    font-weight: var(--fw-400);
+    line-height: 1.3;
+    color: var(--white-2);
+    text-transform: capitalize;
+}
+
+.itemYear {
+    color: var(--vegas-gold);
+    font-weight: var(--fw-400);
+    line-height: 1.6;
+    font-size: var(--fs-6);
+}
+
+.itemLocation {
+    width: 43.75rem;
+    font-size: 0.875rem;
+    color: var(--light-gray);
+    font-weight: var(--fw-300);
+    line-height: 1.6;
+}
