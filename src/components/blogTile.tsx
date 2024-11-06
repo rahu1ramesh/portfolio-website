@@ -3,6 +3,7 @@ import styles from "../styles/blogTile.module.css";
 import {BlogTileProps} from "../types/blog";
 import Image from "next/image";
 import Link from "next/link";
+import {formatDate} from "../service/common";
 
 const BlogTile: React.FC<BlogTileProps> = ({image, date, title, description, link}) => {
     return (
@@ -18,7 +19,7 @@ const BlogTile: React.FC<BlogTileProps> = ({image, date, title, description, lin
                     className={styles.blogTileImageBox}
                 />
                 <div className={styles.blogTileContent}>
-                    <div className={styles.blogTileMeta}>{date}</div>
+                    <div className={styles.blogTileMeta}>{formatDate(date)}</div>
                     <h3 className={styles.blogTileTitle}>{title}</h3>
                     <p className={styles.blogTileDescription}>{description}</p>
                 </div>

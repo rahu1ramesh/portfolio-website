@@ -1,7 +1,14 @@
-import React from "react";
+import React, {useState} from "react";
 import styles from "../styles/contact.module.css";
+import toast from "react-hot-toast";
+import {CONTACT_RESPONSE} from "@/constants/contact";
 
 const Contact: React.FC = () => {
+    const [message, setMessage] = useState("");
+    const sendHandler = () => {
+        setMessage("");
+        toast.success(CONTACT_RESPONSE);
+    };
     return (
         <div className={styles.contact}>
             <header>
@@ -22,8 +29,10 @@ const Contact: React.FC = () => {
                     placeholder="Your Message"
                     required={true}
                     className={styles.contactMessage}
+                    value={message ? undefined : message}
+                    onChange={(e) => setMessage(e.target.value)}
                 ></textarea>
-                <button type="submit" className={styles.contactBtn}>
+                <button type="submit" className={styles.contactBtn} onClick={sendHandler}>
                     Send
                 </button>
             </div>
