@@ -1,7 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: "export",
     assetPrefix: "./",
+    async rewrites() {
+        return [
+            {
+                source: "/medium.com/:path*",
+                destination: "https://medium.com/feed/@rahul1ramesh",
+            },
+        ];
+    },
     webpack: (config) => {
         config.experiments = config.experiments || {};
         config.experiments.topLevelAwait = true;
