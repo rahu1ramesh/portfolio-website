@@ -7,7 +7,6 @@ import {ComponentName, COMPONENTS} from "./constants";
 
 const MainContent: React.FC = () => {
     const [displayedTable, setDisplayedTable] = useState<ComponentName>("About");
-
     return (
         <div className={styles.mainContent}>
             <Navbar setDisplayedTable={setDisplayedTable} activeTab={displayedTable} />
