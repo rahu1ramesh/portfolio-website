@@ -6,6 +6,7 @@
 .resumeTitle {
     position: relative;
     margin: 1rem 0rem;
+    margin-top: 3rem;
     color: var(--white-2);
     font-size: var(--fs-1);
     font-weight: var(--fw-600);
