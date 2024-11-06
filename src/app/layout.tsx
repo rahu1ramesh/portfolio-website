@@ -1,5 +1,6 @@
 import type {Metadata} from "next";
 import "../styles/global.css";
+import Toast from "@/components/toast";
 
 export const metadata: Metadata = {
     title: "Rahul Ramesh | Portfolio",
@@ -13,7 +14,10 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body>{children}</body>
+            <body>
+                <Toast />
+                {children}
+            </body>
         </html>
     );
 }
