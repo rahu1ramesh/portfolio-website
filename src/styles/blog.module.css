@@ -40,3 +40,11 @@
     align-items: start;
     justify-content: center;
 }
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
+    width: 100%;
+}

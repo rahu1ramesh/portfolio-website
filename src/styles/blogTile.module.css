@@ -7,8 +7,8 @@
 }
 
 .blogTileImage {
-    width: 100%;
-    height: 14.375rem;
+    width: 26rem !important;
+    height: 10rem !important;
     object-fit: cover;
 }
 
