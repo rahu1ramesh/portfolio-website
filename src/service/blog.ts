@@ -1,7 +1,7 @@
 import Parser from "rss-parser";
 import * as cheerio from "cheerio";
 import {BlogTileProps} from "../../src/types/blog";
-import {MEDIUM_BLOG_IMAGE_REGEX, MEDIUM_URL} from "@/constants/blog";
+import {MEDIUM_BLOG_IMAGE_REGEX, MEDIUM_URL, CORS_PROXY} from "@/constants/blog";
 
 const extractFirstParagraph = (html: string): string => {
     const $ = cheerio.load(html);
@@ -13,7 +13,7 @@ const safeExtract = (field: string | undefined, defaultValue: string = ""): stri
 export async function fetchAndParseRSS(): Promise<BlogTileProps[]> {
     try {
         const parser = new Parser();
-        const feed = await parser.parseURL(MEDIUM_URL);
+        const feed = await parser.parseURL(CORS_PROXY+MEDIUM_URL);
 
         return feed.items.map((item) => {
             const contentEncoded = safeExtract(item["content:encoded"]);

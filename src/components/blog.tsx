@@ -23,7 +23,7 @@ const Blog: React.FC = () => {
             }
         };
         fetchBlogData();
-    }, blogItems);
+    }, []);
 
     return (
         <div className={styles.blog}>
